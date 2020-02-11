@@ -7,8 +7,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update -yq \
 && apt-get install -yq git wget zip swig unzip build-essential python3 python3-opencv python3-pip python3-dev \
 libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev python-pip \
-libllvm-7-ocaml-dev libllvm7 llvm-7 llvm-7-dev llvm-7-doc llvm-7-examples llvm-7-runtime \
-
+libllvm-7-ocaml-dev libllvm7 llvm-7 llvm-7-dev llvm-7-doc llvm-7-examples llvm-7-runtime 
 
 COPY . /root/tf-openpose/
 WORKDIR /root/tf-openpose/
